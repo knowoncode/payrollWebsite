@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Dzinex Technologies</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employee.html">Employee</a></li>
+                <li><a href="admin.html" class="active">Admin</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Admin Portal</h2>
+        
+        <div class="glass-panel">
+            <h3>Total Employee List</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>DZ-1001</td><td>Alice Smith</td><td>Engineering</td><td><span style="color: #10b981;">Active</span></td><td><button style="padding: 5px 15px; font-size: 0.8rem;">Edit</button></td></tr>
+                        <tr><td>DZ-1002</td><td>Bob Johnson</td><td>Design</td><td><span style="color: #10b981;">Active</span></td><td><button style="padding: 5px 15px; font-size: 0.8rem;">Edit</button></td></tr>
+                        <tr><td>DZ-1003</td><td>Carol White</td><td>HR</td><td><span style="color: #f87171;">On Leave</span></td><td><button style="padding: 5px 15px; font-size: 0.8rem;">Edit</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="glass-panel">
+            <h3>Add New Employee</h3>
+            <form style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                    <input type="text" required>
+                    <label>First Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label>Last Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" required>
+                    <label>Department</label>
+                </div>
+                <div class="form-group" style="grid-column: span 2;">
+                    <button type="submit">Register Employee</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dzinex Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
